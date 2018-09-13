@@ -69,12 +69,7 @@ labels = np.array(labels)
 # classification you should use Keras' to_categorical function
 # instead as the scikit-learn's LabelBinarizer will not return a
 # vector)
-lb = LabelBinarizer()
-#trainY = lb.fit_transform(trainY)
-#testY = lb.transform(testY)
-print(trainY)
 trainY = to_categorical(trainY)
-print(trainY)
 testY = to_categorical(testY)
 
 # define the 3072-1024-512-3 architecture using Keras
@@ -124,6 +119,3 @@ plt.savefig(args["plot"])
 # save the model and label binarizer to disk
 print("[INFO] serializing network and label binarizer...")
 model.save(args["model"])
-f = open(args["label_bin"], "wb")
-f.write(pickle.dumps(lb))
-f.close()
