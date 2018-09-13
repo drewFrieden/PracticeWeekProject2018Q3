@@ -80,7 +80,7 @@ model.add(Dense(2, activation="softmax"))
 
 # initialize our initial learning rate and # of epochs to train for
 INIT_LR = 0.01
-EPOCHS =75
+EPOCHS =4
  
 # compilg the model using SGD as our optimizer and categorical
 # cross-entropy loss (you'll want to use binary_crossentropy
