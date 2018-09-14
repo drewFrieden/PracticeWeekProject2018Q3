@@ -8,6 +8,6 @@ Specifically for 2-category categorical crossentropy models, you'll need to have
 keras' to_categorical function on your y data instead of LabelBinarizer (LB will not properly return a vector, as our model requires, and to_categorical only understands integers)
 
 To train this model, run this command, adjusting for the correct path on your machine for your user:
-`python .\train_doctype_2category.py --dataset 'C:\Users\alla.hoffman\Documents\tensorflow\PracticeWeekProject2018Q3\CNN_Simple_Model_2_Categories\doctypes'  --model ../model --label-bin ../model --plot 'C:\Users\alla.hoffman\Documents\tensorflow\PracticeWeekProject2018Q3\CNN_Simple_Model_2_Categories\docImages'`
+`python .\train_doctype_2category.py --dataset 'C:\Users\alla.hoffman\Documents\tensorflow\PracticeWeekProject2018Q3\CNN_Simple_Model_2_Categories\doctypes'  --model 'C:\Users\alla.hoffman\Documents\tensorflow\PracticeWeekProject2018Q3\CNN_Simple_Model_2_Categories\model\model.h5' --label-bin 'C:\Users\alla.hoffman\Documents\tensorflow\PracticeWeekProject2018Q3\CNN_Simple_Model_2_Categories\model' --plot 'C:\Users\alla.hoffman\Documents\tensorflow\PracticeWeekProject2018Q3\CNN_Simple_Model_2_Categories\docImages'`
 
 NB that if you are working on a windows machine, this command may only work from the command prompt within an issue of VisualStudio Code - or this may be a result of idiosyncratic Python installations on some local machines.
